@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face{
+  font-family: "Roboto";
+  src: url("./Fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 *{
   box-sizing: border-box;
 }
@@ -19,8 +25,8 @@ body{
     width: 40%;
     padding: 100px 0 20px 0;
     background: url("./Images/Background.jpg");
-    background-size: contain;
-    background-position: 0 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
     .title{
       display: flex;
       background: rgba($color: #2A2D43, $alpha:0.5) ;
@@ -32,9 +38,9 @@ body{
       }
       h1{
         margin: 0;
-        font-family:"Blackout";
+        font-family:"Blackout", sans-serif;
         font-size: 60px;
-        color: #7F2CCB;
+        color: #E54F6D;
       }
     }
     .photosAuthor{
@@ -45,6 +51,81 @@ body{
       a{
         color: #FF84E8;
       }
+    }
+  }
+
+  main{
+    font-family: "Roboto", sans-serif;
+    width: 60%;
+    background-color: #22162B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .text{
+      color: #E54F6D;
+      font-size: 20px;
+      padding: 0 30px;
+    }
+    .form{
+      height: 50%;
+      form{
+        .inputsBase{
+          background-color: #E54F6D;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          gap: 20px;
+          height: 30vh;
+          color: #22162B;
+          h2{
+            padding: 0 30px;
+          }
+          .inputs{
+            display: grid;
+            grid-template-columns: repeat(2 , 350px);
+            grid-template-rows: repeat(3, 1fr);
+            justify-items: self-start;
+            gap: 20px;
+            .input{
+              padding: 0 30px;
+              display: flex;
+              flex-direction: column;
+              input{
+                border: none;
+                height: 25px;
+                padding:0 5px;
+                border-radius: 5px;
+                width: 300px;
+              }
+            }
+          }
+
+        }
+        .submit{
+          margin-top: 50px;
+          padding: 0 30px;
+          
+          button{
+            background-color: #F8C630;
+            border: none;
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            color: #22162B;
+            font-size: 15px;
+            font-weight: bold;
+          }
+          p{
+            color: #E54F6D;
+            font-size: 20px;
+            span{
+              color: #F8C630;
+              font-weight: bolder;
+            }
+          }
+        }
+      }
+
     }
   }
 }

@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Roboto";
+  src: url("./Fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
 }
@@ -21,8 +27,8 @@ body header {
   width: 40%;
   padding: 100px 0 20px 0;
   background: url("./Images/Background.jpg");
-  background-size: contain;
-  background-position: 0 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 body header .title {
   display: flex;
@@ -36,9 +42,9 @@ body header .title img {
 }
 body header .title h1 {
   margin: 0;
-  font-family: "Blackout";
+  font-family: "Blackout", sans-serif;
   font-size: 60px;
-  color: #7F2CCB;
+  color: #E54F6D;
 }
 body header .photosAuthor {
   align-self: stretch;
@@ -48,6 +54,75 @@ body header .photosAuthor {
 }
 body header .photosAuthor a {
   color: #FF84E8;
+}
+body main {
+  font-family: "Roboto", sans-serif;
+  width: 60%;
+  background-color: #22162B;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body main .text {
+  color: #E54F6D;
+  font-size: 20px;
+  padding: 0 30px;
+}
+body main .form {
+  height: 50%;
+}
+body main .form form .inputsBase {
+  background-color: #E54F6D;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  height: 30vh;
+  color: #22162B;
+}
+body main .form form .inputsBase h2 {
+  padding: 0 30px;
+}
+body main .form form .inputsBase .inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: self-start;
+  gap: 20px;
+}
+body main .form form .inputsBase .inputs .input {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+body main .form form .inputsBase .inputs .input input {
+  border: none;
+  height: 25px;
+  padding: 0 5px;
+  border-radius: 5px;
+  width: 300px;
+}
+body main .form form .submit {
+  margin-top: 50px;
+  padding: 0 30px;
+}
+body main .form form .submit button {
+  background-color: #F8C630;
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  color: #22162B;
+  font-size: 15px;
+  font-weight: bold;
+}
+body main .form form .submit p {
+  color: #E54F6D;
+  font-size: 20px;
+}
+body main .form form .submit p span {
+  color: #F8C630;
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=style.css.map */
