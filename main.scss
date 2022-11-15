@@ -1,6 +1,6 @@
 @font-face {
-  font-family:"Blackout" ;
-  src: url("./Fonts/Blackout.otf");
+  font-family:"Conthrax-sb" ;
+  src: url("./Fonts/conthrax-sb.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -38,7 +38,7 @@ body{
       }
       h1{
         margin: 0;
-        font-family:"Blackout", sans-serif;
+        font-family:"Conthrax-sb", sans-serif;
         font-size: 60px;
         color: #E54F6D;
       }
@@ -47,6 +47,7 @@ body{
       align-self: stretch;
       text-align: center;
       background: rgba($color: #2A2D43, $alpha:0.5) ;
+      font-family: "Roboto", sans-serif;
       color: #7F2CCB;
       a{
         color: #FF84E8;

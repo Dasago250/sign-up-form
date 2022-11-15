@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Blackout";
-  src: url("./Fonts/Blackout.otf");
+  font-family: "Conthrax-sb";
+  src: url("./Fonts/conthrax-sb.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,7 +42,7 @@ body header .title img {
 }
 body header .title h1 {
   margin: 0;
-  font-family: "Blackout", sans-serif;
+  font-family: "Conthrax-sb", sans-serif;
   font-size: 60px;
   color: #E54F6D;
 }
@@ -50,6 +50,7 @@ body header .photosAuthor {
   align-self: stretch;
   text-align: center;
   background: rgba(42, 45, 67, 0.5);
+  font-family: "Roboto", sans-serif;
   color: #7F2CCB;
 }
 body header .photosAuthor a {
