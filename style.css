@@ -97,11 +97,15 @@ body main .form form .inputsBase .inputs .input {
   flex-direction: column;
 }
 body main .form form .inputsBase .inputs .input input {
-  border: none;
   height: 25px;
   padding: 0 5px;
   border-radius: 5px;
+  border: #E54F6D solid 3px;
   width: 300px;
+}
+body main .form form .inputsBase .inputs .input input:focus {
+  outline: none;
+  border: #F8C630 solid 3px;
 }
 body main .form form .submit {
   margin-top: 50px;

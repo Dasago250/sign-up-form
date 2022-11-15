@@ -92,11 +92,15 @@ body{
               display: flex;
               flex-direction: column;
               input{
-                border: none;
                 height: 25px;
                 padding:0 5px;
                 border-radius: 5px;
+                border: #E54F6D solid 3px;
                 width: 300px;
+                &:focus{
+                  outline: none;
+                  border: #F8C630 solid 3px;
+                }
               }
             }
           }
